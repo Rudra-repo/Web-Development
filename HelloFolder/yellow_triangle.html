@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Centered Yellow Triangle</title>
+  <style>
+    .page {
+      height: 100vh;               
+      display: flex;
+      align-items: center;         
+      justify-content: center;     
+    }
+    .triangle {
+      width: 150px;            
+      height: 130px;           
+      background-color: #ffd400; 
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="triangle" aria-hidden="true"></div>
+  </div>
+</body>
+</html>

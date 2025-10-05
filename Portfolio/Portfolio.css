@@ -8,15 +8,13 @@
 }
 
 html{
-    /* Fixes scrolling issues for the new sections */
+    
     overflow-x: hidden;
     scroll-behavior: smooth; 
 }
 
 body{
     width: 100%;
-    /* ⚠️ Theme Fix: Removed height: 100vh and overflow: hidden */
-    /* This ensures all content is visible and the page can scroll */
     min-height: 100vh;
     background: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));
 }
@@ -26,8 +24,8 @@ nav{
     height: 10vh;
     position: sticky;
     top: 0;
-    z-index: 100; /* Ensure nav stays above other content */
-    background: rgba(254,215,173, 0.9); /* Add background for sticky nav */
+    z-index: 100; 
+    background: rgba(254,215,173, 0.9);
 }
 
 
@@ -140,12 +138,11 @@ nav{
 
 section{
     width: 100%;
-    /* Keep original hero section height */
+    
     min-height: 90vh; 
-    padding: 20px 0; /* Add padding for content */
-}
+    padding: 20px 0; 
 
-/* Original Main Hero Section */
+
 #home {
     height: 90vh; 
 }
@@ -277,11 +274,9 @@ section{
  box-shadow: 0 0 40px rgb(109,67, 0);
 }
 
-/* ---------------------------------------------------- */
-/* 🆕 NEW: General Section Styles */
-/* ---------------------------------------------------- */
 
-/* Placeholder to make navigation targets work for sections not yet fully built */
+
+
 .placeholder-section {
     min-height: 50vh; 
     display: flex;
@@ -292,10 +287,10 @@ section{
 }
 
 .projects-section, .contact-section {
-    min-height: 90vh; /* Ensures sections take up most of the screen */
+    min-height: 90vh; 
     width: 100%;
     padding: 80px 5% 40px;
-    /* Use the same background for theme consistency */
+    
     background: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));
     display: flex;
     flex-direction: column;
@@ -315,9 +310,7 @@ section{
     text-shadow: 0 0 10px rgb(109,67, 0);
 }
 
-/* ---------------------------------------------------- */
-/* 🆕 NEW: Projects Section Styles */
-/* ---------------------------------------------------- */
+
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -383,9 +376,7 @@ section{
     color: white;
 }
 
-/* ---------------------------------------------------- */
-/* 🆕 NEW: Contact Section Styles */
-/* ---------------------------------------------------- */
+
 
 .contact-container {
     display: flex;
@@ -461,11 +452,9 @@ section{
 }
 
 
-/* ---------------------------------------------------- */
-/* 📱 Media Query Updates */
-/* ---------------------------------------------------- */
+
 @media (max-width:884px) {
-    /* Theme Fix: Ensure vertical scroll is allowed on mobile */
+    
     body{
         overflow-y: scroll;
     }
@@ -508,7 +497,7 @@ section{
         margin-bottom: 0px;
     }
     
-    /* Mobile-specific changes for new sections */
+    
     .projects-section, .contact-section {
         padding: 40px 5% 40px;
     }
@@ -541,7 +530,7 @@ section{
 .footer {
     width: 100%;
     padding: 20px 5%;
-    /* Use your main theme color for the footer background */
+    
     background: rgb(109,67, 0); 
     display: flex;
     justify-content: center;
@@ -550,7 +539,7 @@ section{
 
 .footer-text p {
     font-size: 0.9rem;
-    color: white; /* White text for contrast against the orange/brown background */
+    color: white; 
     text-align: center;
     font-weight: 400;
 }

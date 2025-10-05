@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Rudra</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450"><a href="#projects">Projects</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#contact">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="rudra.png" alt="Rudra Pratap Singh" class="profile-photo">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Rudra</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">I’m Rudra Pratap Singh, a passionate student currently learning web development and Java. With a strong curiosity for technology, I love exploring how things work behind the screen. My goal is to grow into a full-stack developer, building clean, efficient, and user-focused digital experiences.</p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com/Rudra-repo" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/rudra-pratap-singh-571a83369?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <button>Download CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 class="section-title" data-aos="fade-down" data-aos-duration="1000">My <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+                <div class="project-info">
+                    <h3>Ferris Wheel</h3>
+                    <p>This is simple class Project of ferris wheel using HTMl and CSS only.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="live-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/Rudra-repo" target="_blank" class="github-link"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="project-info">
+                    <h3>Moon revolving around Earth</h3>
+                    <p>This is simple class Project of Moon revolving around the Earth using HTMl and CSS only.  </p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="live-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/Rudra-repo" target="_blank" class="github-link"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="project-info">
+                    <h3>Simple Animation Box</h3>
+                    <p>This is simple class Project of animation of changing figure from square to circle with colour using HTMl and CSS only.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="live-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/Rudra-repo" target="_blank" class="github-link"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title" data-aos="fade-down" data-aos-duration="1000">Get In <span>Touch</span></h2>
+        <div class="contact-container">
+            <form action="YOUR_FORM_ENDPOINT" method="POST" class="contact-form" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="subject" placeholder="Email Subject" required>
+                </div>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <div class="btn">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+            <div class="contact-info" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">
+                <h3>Contact Information</h3>
+                <p><i class="fa-solid fa-envelope"></i> Email: rudra477001@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Location: Bengaluru, India</p>
+                <div class="social-links">
+                    <a href="https://github.com/Rudra-repo" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/rudra-pratap-singh-571a83369?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; 2025 Rudra. All Rights Reserved. | Portfolio designed and coded by Rudra.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
+</body>
+</html>

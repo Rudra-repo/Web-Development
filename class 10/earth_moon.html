@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Moon Animation</title>
+    <style>
+        /* file: styles.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: black;
+}
+.space {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+.earth {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+
+/* Orbit Container */
+.orbit {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  transform: translate(-50%, -50%); /* Centers the orbit within the space */
+  animation-name: orbit;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  margin: 0;
+  padding: 0;
+  color: yellow;
+  border-radius: 50%; /* Make the orbit a circular path */
+}
+
+.moon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  background-color: white;
+  border-radius: 50%; /* Make the moon circular */
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="earth"></div>
+  <div class="orbit">
+    <div class="moon"></div>
+  </div>
+
+
+</body>
+</html>

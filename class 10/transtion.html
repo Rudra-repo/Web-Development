@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .container{
+            padding: 60px;
+        }
+        button{
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            transition-duration: 1s;
+            transition-property: all;
+        }
+        button:hover{
+            background-color: yellow;
+            width: 250px;
+            height: 250px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button>start</button>
+    </div>
+</body>
+</html>
